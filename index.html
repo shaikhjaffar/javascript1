@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment no 1</title>
+</head>
+
+    <style>
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 600px;
+            height: 500px;
+            background-color:green;
+            border: 1px solid gray;
+            box-shadow: 0 0 40px black;
+           margin: 7rem 30rem 5rem 30rem;
+           text-align: center;
+           flex-direction: column;
+        }
+        h1{
+            color: red;
+        }
+        button{
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Hello Everyone</h1>
+        <h2>Example of the JavaScript prompt() :</h2>
+        <button onclick = "fun()"> Click Me</button>
+        <p id = "para" style="font-style: italic; font-size: medium;"></p>
+
+    </div>
+    <script>
+        function fun() {
+        let a = prompt("Enter some text",);
+        if (a != null) {
+        document.getElementById("para").innerHTML = "You have Enter :  " + a;
+        }
+        }
+    </script>
+</body>
+</html>
